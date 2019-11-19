@@ -9,6 +9,7 @@ import bs4 as bs
 import urllib.request
 import os
 import filetype
+
 noCharTag = []
 tag = []
 DocId = []
