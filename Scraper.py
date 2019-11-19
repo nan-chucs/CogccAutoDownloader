@@ -21,7 +21,6 @@ sauce = urllib.request.urlopen('https://cogcc.state.co.us/weblink/results.aspx?i
 soup = bs.BeautifulSoup(sauce,'lxml')
 
 for url in soup.find_all('a'):
-    
     if url.get('href').startswith('DownloadDocumentPDF'):
         fullUrl = 'https://cogcc.state.co.us/weblink/'+url.get('href')
         urlDownload.append(fullUrl)
