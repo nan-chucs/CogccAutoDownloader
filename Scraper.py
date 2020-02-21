@@ -48,7 +48,7 @@ for x in urlDownload:
     urllib.request.urlretrieve(x, urldict[DocId[index]])
     index += 1
 
-folder = 'C:/Users/Noel Chang/Videos/Study/Andrew NG Machine Learning/Webscraping'
+folder = 'C:/Users/Noel Chang/Webscraping'
 
 for file in os.listdir(folder):
     kind = filetype.guess_extension(file)
